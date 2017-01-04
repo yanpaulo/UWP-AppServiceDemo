@@ -26,5 +26,10 @@ namespace AppServiceDemo
         {
             this.InitializeComponent();
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = Windows.ApplicationModel.Package.Current.Id.FamilyName;
+        }
     }
 }
